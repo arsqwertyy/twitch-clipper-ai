@@ -1,0 +1,17 @@
+# Секретные ключи и токены OAuth 2.0 YouTube API (НИКОГДА не загружать в публичный репозиторий!)
+client_secrets.json
+youtube_token.json
+.yt_api_channel.json
+youtube_uploads.json
+
+# Виртуальное окружение и кэш Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Временный кольцевой буфер сегментов и готовые видеоролики
+buffer/
+clips/
+*.ts
+*.ass

@@ -1,0 +1,381 @@
+channel: frametamer666
+paths:
+  buffer_dir: buffer
+  clips_dir: clips
+stream:
+  quality: 1080p60
+  segment_duration: 5
+  buffer_keep_seconds: 150
+  check_interval: 300
+detector:
+  window_seconds: 10
+  history_windows: 30
+  warmup_windows: 6
+  z_score_threshold: 2.45
+  min_messages_in_window: 8
+  min_unique_chatters: 7
+  min_hype_score: 18.0
+  min_viral_score: 38.0
+  pre_roll_seconds: 14.0
+  post_roll_seconds: 6.0
+  max_clip_seconds: 37.0
+  cooldown_seconds: 120.0
+  global_cooldown_seconds: 30.0
+  hype_keywords:
+  - ахах
+  - хаха
+  - пхах
+  - ору
+  - кек
+  - клип
+  - clip
+  - kekw
+  - lul
+  - lulw
+  - omegalul
+  - icant
+  - pog
+  - pogchamp
+  - wtf
+  - ебать
+  - ахуе
+  - нихуя
+  - пиздец
+  - сюда
+  - жесть
+  - имба
+  - легенда
+  - кринж
+  - гг
+  - gg
+  - ez
+  - xd
+  - xdd
+  - ???
+  - '!!!'
+  use_audio_peaks: true
+video:
+  mode: tiktok
+  width: 1080
+  height: 1920
+  center_zoom: 1.35
+  blur_strength: 25
+  use_nvenc: true
+  webcam_position: auto
+  climax_zoom: true
+  banner:
+    enabled: true
+    pause_video: true
+    path: banners/dinodrop-voiced-banner-1-8.mp4
+    position_time: smart
+    width_ratio: 0.88
+    pos_y: 0.48
+    volume: 1.0
+    chromakey: true
+    chromakey_color: auto
+    chromakey_similarity: 0.14
+    chromakey_blend: 0.06
+subtitles:
+  enabled: true
+  model_size: large-v3-turbo
+  language: ru
+  device: cuda
+  compute_type: int8_float16
+  words_per_phrase: 3
+  font_name: Arial
+  font_size: 72
+  margin_v: 420
+  smart_hook: true
+youtube:
+  enabled: true
+  auto_upload: true
+  visibility: public
+  category_id: '22'
+  min_viral_score: 0
+  min_interval_minutes: 60
+  max_per_day: 24
+  client_secrets_path: client_secrets.json
+  token_path: youtube_token.json
+  title_hashtags: '#dinodrop #динодроп'
+  auto_title: true
+  extra_hashtags: ''
+  delete_after_upload: true
+  auto_comment: true
+channels:
+- frametamer666
+- stintik
+- recrent
+- sasavot
+- buster
+- evelone2004
+- gensyxa
+- bratishkinoff
+- ravshann
+- t2x2
+- enzzai
+- whylollycry
+- korya_mc
+channel_profiles:
+  frametamer666:
+    source: vod
+    updated_at: '2026-11-22 01:45:24'
+    followers: 1788109
+    analyzed_messages: 325
+    analyzed_windows: 26
+    baseline_mean: 10.66
+    baseline_std: 8.78
+    z_score_threshold: 3.3
+    min_messages_in_window: 13
+    min_unique_chatters: 12
+    min_hype_score: 19.7
+    custom_keywords: []
+    webcam_crop:
+      x: 0.0
+      y: 0.3821
+      w: 0.2344
+      h: 0.2408
+      preset_name: hybrid_rect_left
+  stintik:
+    source: vod
+    updated_at: '2026-11-22 01:45:58'
+    followers: 1707819
+    analyzed_messages: 375
+    analyzed_windows: 26
+    baseline_mean: 12.53
+    baseline_std: 7.08
+    z_score_threshold: 3.3
+    min_messages_in_window: 15
+    min_unique_chatters: 13
+    min_hype_score: 23.2
+    custom_keywords:
+    - нету
+    webcam_crop:
+      x: 0.0
+      y: 0.2316
+      w: 0.1828
+      h: 0.1878
+      preset_name: hybrid_rect_left
+  recrent:
+    source: vod
+    updated_at: '2026-11-22 01:46:32'
+    followers: 2030954
+    analyzed_messages: 290
+    analyzed_windows: 26
+    baseline_mean: 12.52
+    baseline_std: 6.23
+    z_score_threshold: 3.3
+    min_messages_in_window: 14
+    min_unique_chatters: 12
+    min_hype_score: 23.2
+    custom_keywords: []
+    webcam_crop:
+      x: 0.0003
+      y: 0.3889
+      w: 0.2191
+      h: 0.225
+      preset_name: hybrid_rect_left
+  sasavot:
+    source: vod
+    updated_at: '2026-11-22 01:47:05'
+    followers: 1880248
+    analyzed_messages: 454
+    analyzed_windows: 26
+    baseline_mean: 12.71
+    baseline_std: 12.62
+    z_score_threshold: 3.3
+    min_messages_in_window: 16
+    min_unique_chatters: 14
+    min_hype_score: 23.5
+    custom_keywords:
+    - сука
+    - тупой
+    - еблан
+    - дура
+    - subprise
+    - бля
+    webcam_crop:
+      x: 0.0013
+      y: 0.3463
+      w: 0.256
+      h: 0.263
+      preset_name: auto_mid_left
+  buster:
+    source: vod
+    updated_at: '2026-11-22 01:47:40'
+    followers: 5373910
+    analyzed_messages: 252
+    analyzed_windows: 26
+    baseline_mean: 10.55
+    baseline_std: 5.52
+    z_score_threshold: 3.3
+    min_messages_in_window: 12
+    min_unique_chatters: 11
+    min_hype_score: 19.5
+    custom_keywords: []
+    webcam_crop:
+      x: 0.0533
+      y: 0.05
+      w: 0.1766
+      h: 0.1814
+      preset_name: auto_top_left
+  evelone2004:
+    source: vod
+    updated_at: '2026-11-22 01:48:13'
+    followers: 2635281
+    analyzed_messages: 1836
+    analyzed_windows: 26
+    baseline_mean: 87.8
+    baseline_std: 43.67
+    z_score_threshold: 3.3
+    min_messages_in_window: 109
+    min_unique_chatters: 94
+    min_hype_score: 162.4
+    custom_keywords:
+    - найс
+    - еба
+    webcam_crop:
+      x: 0.85
+      y: 0.8172
+      w: 0.15
+      h: 0.1541
+      preset_name: auto_bottom_right
+  gensyxa:
+    source: vod
+    updated_at: '2026-11-22 01:48:50'
+    followers: 2014504
+    analyzed_messages: 122
+    analyzed_windows: 26
+    baseline_mean: 4.75
+    baseline_std: 3.11
+    z_score_threshold: 3.3
+    min_messages_in_window: 6
+    min_unique_chatters: 5
+    min_hype_score: 14.0
+    custom_keywords: []
+    webcam_crop:
+      x: 0.7715
+      y: 0.2778
+      w: 0.2191
+      h: 0.225
+      preset_name: hybrid_rect_right
+  bratishkinoff:
+    source: vod
+    updated_at: '2026-11-22 01:49:23'
+    followers: 3819086
+    analyzed_messages: 763
+    analyzed_windows: 26
+    baseline_mean: 23.25
+    baseline_std: 13.9
+    z_score_threshold: 3.3
+    min_messages_in_window: 24
+    min_unique_chatters: 22
+    min_hype_score: 43.0
+    custom_keywords:
+    - dans
+    - бля
+    webcam_crop:
+      x: 0.0
+      y: 0.4183
+      w: 0.2391
+      h: 0.2456
+      preset_name: hybrid_rect_left
+  ravshann:
+    source: vod
+    updated_at: '2026-11-22 01:49:55'
+    followers: 1385173
+    analyzed_messages: 584
+    analyzed_windows: 26
+    baseline_mean: 24.38
+    baseline_std: 8.53
+    z_score_threshold: 3.3
+    min_messages_in_window: 26
+    min_unique_chatters: 20
+    min_hype_score: 45.1
+    custom_keywords:
+    - газ
+    - вась
+    - нахуй
+    - играет
+    webcam_crop:
+      x: 0.0632
+      y: 0.6941
+      w: 0.16
+      h: 0.16
+      preset_name: auto_bottom_left
+  t2x2:
+    source: vod
+    updated_at: '2026-11-22 01:50:29'
+    followers: 2421583
+    analyzed_messages: 692
+    analyzed_windows: 26
+    baseline_mean: 23.41
+    baseline_std: 11.68
+    z_score_threshold: 3.3
+    min_messages_in_window: 29
+    min_unique_chatters: 26
+    min_hype_score: 43.3
+    custom_keywords:
+    - даа
+    webcam_crop:
+      x: 0.7351
+      y: 0.6111
+      w: 0.2596
+      h: 0.2667
+      preset_name: hybrid_rect_right
+  enzzai:
+    source: vod
+    updated_at: '2026-11-22 01:51:02'
+    followers: 565998
+    analyzed_messages: 132
+    analyzed_windows: 26
+    baseline_mean: 4.45
+    baseline_std: 3.63
+    z_score_threshold: 3.3
+    min_messages_in_window: 6
+    min_unique_chatters: 5
+    min_hype_score: 14.0
+    custom_keywords: []
+    webcam_crop:
+      x: 0.0
+      y: 0.2018
+      w: 0.1453
+      h: 0.1492
+      preset_name: rect_left
+  whylollycry:
+    source: vod
+    updated_at: '2026-11-22 01:51:46'
+    followers: 226248
+    analyzed_messages: 177
+    analyzed_windows: 26
+    baseline_mean: 7.15
+    baseline_std: 6.04
+    z_score_threshold: 3.3
+    min_messages_in_window: 8
+    min_unique_chatters: 8
+    min_hype_score: 14.0
+    custom_keywords: []
+    webcam_crop:
+      x: 0.1555
+      y: 0.0378
+      w: 0.1671
+      h: 0.1716
+      preset_name: auto_top_left
+  korya_mc:
+    source: vod
+    updated_at: '2026-11-22 01:52:19'
+    followers: 469983
+    analyzed_messages: 75
+    analyzed_windows: 26
+    baseline_mean: 2.1
+    baseline_std: 3.0
+    z_score_threshold: 3.3
+    min_messages_in_window: 6
+    min_unique_chatters: 5
+    min_hype_score: 14.0
+    custom_keywords: []
+    webcam_crop:
+      x: 0.0
+      y: 0.4333
+      w: 0.1828
+      h: 0.1878
+      preset_name: hybrid_rect_left
