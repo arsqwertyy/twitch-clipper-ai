@@ -1,0 +1,32 @@
+name: Python CI Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  lint-and-verify:
+    name: Syntax & Module Verification (Python 3.12)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile & Verify All Python Modules
+        run: |
+          python -m py_compile *.py
+          python -c "import pathlib, yaml; cfg = yaml.safe_load(pathlib.Path('config.yaml').read_text(encoding='utf-8')); assert 'channels' in cfg and 'detector' in cfg"
+        env:
+          PYTHONPATH: .
+      - name: Install PyYAML for Config Validation
+        if: failure()
+        run: pip install pyyaml && python -c "import pathlib, yaml; cfg = yaml.safe_load(pathlib.Path('config.yaml').read_text(encoding='utf-8')); assert 'channels' in cfg"
